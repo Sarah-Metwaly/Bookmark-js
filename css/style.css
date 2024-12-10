@@ -1,0 +1,173 @@
+body{
+    background-color: #F7ECDE;
+    padding: 48px 0px;
+}
+
+::selection{
+    background-color: #FEC260;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    color: #352e28;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 8px 0px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+h1::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 63%;
+    bottom: 12%;
+    z-index: -1;
+    background-color: #FEC260;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover::before{
+    top:38%;
+}
+
+.center{
+    border-width: 1.6px 0 1.6px 0;
+    border-style: dotted;
+    border-color: #352e28;
+    margin-top: 48px;
+    padding: 24px 16px;
+
+}
+
+h2{
+    display: inline-block;
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    background: linear-gradient(to right,#3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    padding: 0px 5px;
+    padding-top: 7px;
+}
+
+.center span i{
+    font-size: 25px;
+}
+
+.input label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    color: #212529;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 4px;
+    padding-bottom: 8px;
+}
+.inputt:focus {
+    box-shadow:0 0 0 .25rem #FADEB4;
+    border-color: #ECA568;
+  }
+
+.input button{
+    padding: 6px 48px;
+    border: 0.8px;
+    background-color: #d1512d;
+    color: white;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.input button:hover{
+    background-color: #d1512d;
+    color: white;
+}
+
+.btn-visit{
+    color: white;
+    background-color:#9eb23b;
+}
+
+.btn-visit:hover{
+    color: white;
+    background-color: #8A9E23;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+
+dialog{
+    position: absolute;
+    top: 30%;
+}
+
+dialog p{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    color: #352e28;
+    font-size: 21px;
+    line-height: 27px;
+
+}
+
+ul li span i{
+    font-weight: 400;
+    color: #bb4120;
+    line-height: 18px;
+}
+
+ul li .dialog-text{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    color: #212529;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+dialog .circle{
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 0px 0px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+dialog .circle-1{
+    background-color: #f15f5d;
+}
+
+dialog .circle-2{
+    background-color: #febe2e;
+}
+
+dialog .circle-3{
+    background-color: #4db748;
+}
+
+dialog .button i{
+    font-weight: 900;
+    color: #212529;
+    font-size: 27px;
+    line-height: 27px;
+}
+
+dialog button{
+    background-color: white;
+}
+
